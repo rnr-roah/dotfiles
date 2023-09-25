@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "Want to shutdown?(Y/n)"
+read ans
+if [[ "$ans" = "y" || "$ans" = "$Return" ]]
+then
+	echo "Shutting down"
+	sleep 1
+	poweroff
+else 
+	echo "Shutdown cancelled"
+	sleep 3
+fi
+exit
+
+
+
